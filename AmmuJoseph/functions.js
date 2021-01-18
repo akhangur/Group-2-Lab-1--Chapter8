@@ -1,18 +1,15 @@
 /* define functions here */
-function calculateTotal(quantity, price)
-{
-    return quantity*price;
-};
-function outputCartRow(file, title, quantity, price, total){
-    total=calculateTotal(quantity[0],price[0]);
-    document.write("<table>");
+var calculateTotal=function(quantity, price) {
+    return quantity * price; 
+    };   
+function outputCartRow(file, title, quantity, price, total) {    
+    total = calculateTotal(quantity[i], price[i]);
     document.write("<tr>");
-    document.write("<td><img src='images/"+file[0]+"'</td>");
-    document.write("<td>"+title[0]+"</td>");
-    document.write("<td>"+quantity[0]+"</td>");
-    document.write("<td>"+price[0].toFixed(2)+"</td>");
-    document.write("<td>"+total[0].toFixed(2)+"</td>");
+    document.write("<td><img src='images/" + file[i] + "'</td>");
+    document.write("<td>" + title[i] + "</td>");
+    document.write("<td>" + quantity[i] + "</td>");
+    document.write("<td>" + price[i].toFixed(2) + "</td>");
+    document.write("<td>" + total.toFixed(2) + "</td>");
     document.write("</tr>");
-    document.write("</table>");
-};
+    };
         
