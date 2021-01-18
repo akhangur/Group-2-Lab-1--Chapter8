@@ -23,7 +23,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
+      <!--  <tr>
             <td><img src="images/106020.jpg"></td>
             <td>Girl with a Pearl Earring</td>
             <td>3</td>
@@ -59,6 +59,39 @@
         <tr class="totals focus">
             <td colspan="4">Grand Total</td>
             <td>$606.50</td>
+        </tr>-->
+        <script src="js/chapter08-project01.js" charset="utf-8"></script>
+        <tr class="totals">
+            <td colspan="4">Subtotal</td>
+            <td>
+                <script>       
+                    document.write('$' + subtotal.toFixed(2));       
+                </script>
+            </td>
+        </tr>
+        <tr class="totals">
+            <td colspan="4" id='tax'>Tax</td>
+            <td>
+                <script>        
+                document.write('$' + tax.toFixed(2));
+                </script>
+            </td>
+        </tr>
+        <tr class="totals">
+            <td colspan="4">Shipping</td>
+            <td>
+            <script>
+            document.write('$' + ship.toFixed(2));        
+            </script>
+            </td>
+        </tr>
+        <tr class="totals focus">
+            <td colspan="4">Grand Total</td>
+            <td>
+                <script>
+                    document.write('$' + grandtotal.toFixed(2));
+                </script>
+            </td>
         </tr>
     </tbody>
 </table>
